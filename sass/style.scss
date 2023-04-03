@@ -56,6 +56,10 @@ body{
   top: 50px;
 
 }
+.row ul{
+  display: flex;
+
+}
 .page-title, .page-subtitle{
   color: $color-three;
 }
@@ -101,7 +105,7 @@ div ul a{
   color: $color-two;
 }
    
-.services .wrapper{
+.services .row{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -170,7 +174,7 @@ div ul a{
   color: $color-four;
   font-weight: bold;
 }
-.portfolio .wrapper{
+.portfolio .row{
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -222,5 +226,11 @@ div ul a{
   color: $color-two;
  }
 
+ /*Media*/
 
+ @media (max-width: 767px) {
+  .portfolio, .services{
+    margin: 0 0;
+  }
 
+ }
