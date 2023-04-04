@@ -13,6 +13,7 @@ $font-header: 'Open Sans', sans-serif;
 }
 body{
   font-family: $font-text;
+  margin: 0;
 }
 .container{
   max-width: 1140px;
@@ -41,23 +42,14 @@ body{
       transform: translate(-50%,-50%);
   }
 }
-.row{
-    position: static;
-    justify-content: space-between;
-}
-.row .col-6{
-  position: absolute;
-  right: 5px;
-  top: 50px;
-}
-.row .col-4{
-  position: absolute;
-  left: 5px;
-  top: 50px;
-
-}
-.row ul{
+.splash .wrapper{
   display: flex;
+  justify-content: space-between;
+}
+
+.col-6 ul{
+  display: flex;
+  flex-wrap: wrap;
 
 }
 .page-title, .page-subtitle{
@@ -68,28 +60,31 @@ body{
   font-size: 60px;
 }
 .btn{
-  position: relative;
+  display: inline-block;
   border-radius: 5px;
   background-color: $color-one;
   color: $color-three;
   font-weight: bold;
   width: 200px;
-  text-align: center;
-  
+  height: 50px;
+  padding: 17px;
+  text-decoration: none; 
 }
 
 ul li a{
+  font-size: 13px;
   color: $color-three;
   padding: 15px;
+  text-decoration: none;
 }
-.col-4 p{
+ul li{
+  list-style: none;
+}
+.col-4 h3{
+  font-size: 20px;
   color: $color-one;
 }
 
-
-div ul a{
-  text-decoration: none;
-}
 /*Services*/
 
 .services{
@@ -200,11 +195,9 @@ div ul a{
  .page-footer .wrapper{
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
  }
  .page-footer ul{
   display: flex;
-  justify-content: flex-start;
 }
  .page-footer li{
   font-size: 0;
